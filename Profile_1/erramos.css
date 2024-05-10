@@ -1,0 +1,255 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    font-family: "Poetsen One", sans-serif !important;
+}
+
+body {
+    background-color: #2B3D5C;
+    z-index: 0;
+}
+
+body nav
+{
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 38px;
+    position: fixed;
+    z-index: 1;
+}
+
+body nav a {
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue !important;
+    margin: 0;
+    padding: 10px 16px;
+}
+
+body nav a:hover {
+    color: #212529;
+    background-color: #CCCCCC !important;
+}
+
+
+
+.sobre 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://st2.depositphotos.com/1020070/46760/v/450/depositphotos_467608818-stock-illustration-program-code-glitch-background-computer.jpg");
+    background-size: contain;
+    height: 500px;
+}
+
+.perfil
+{
+    margin-top: 200px;
+    width: 15%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.sobre div p
+{
+    font-size: 30px;
+    color: white;
+}
+
+.perfil img
+{
+    border-radius: 100px;
+    width: 200px;
+    z-index: 1;
+}
+
+/* p , .texto-cargo
+{
+    z-index: 1;
+} */
+
+.texto-cargo p
+{
+    color: rgb(255, 255, 255) !important;
+    margin-top: 120px;
+}
+
+.resumo
+{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100%);
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-resumo
+{
+    padding-top: 50px;
+    width: 600px;
+    height: 300px;
+}
+
+.texto_titulo {
+    margin-top: 20px;
+    height: 200px;
+    padding-top: 50px;
+    text-align: center;
+    color: beige;
+    /* z-index: 1; */
+}
+
+.portifolio
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+}
+
+.portifolio h1 
+{
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+    color: beige;
+}
+
+
+.linha
+{
+    display: flex;
+    height: 2px;
+    width: 300px;
+    border: solid 2px beige;
+}
+
+.projetos
+{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    height: 600px;
+    width: 100%;
+}
+
+.projeto
+{
+    height: 200px;
+    width: 350px;
+    border: solid black 2px;
+}
+
+.projeto img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.contato
+{
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.links
+{
+    height: 200px;
+}
+
+/* universe.io */
+
+.social-card {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: rgb(255, 255, 255);
+    padding: 20px 25px;
+    border-radius: 14px;
+  }
+  .Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+    z-index: 2;
+  }
+  
+  .BG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: 1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+    font-size: 0px;
+  }
+  .github .BG {
+    background: #181818;
+  }
+  .linkdin .BG {
+    background: #0077b5;
+  }
+  .whatsapp .BG {
+    background: #075e54;
+  }
+  .discord .BG {
+    background: #7289da;
+  }
+  .Btn:hover .BG {
+    transform: scale(1.5);
+    /* transform-origin: bottom; */
+    font-size: 20px;
+    color: white;
+  }
+  
+  .Btn:hover .svgContainer {
+    border: 1px solid rgba(216, 216, 216, 0.466);
+    background-color: rgba(209, 209, 209, 0.466);
+    backdrop-filter: blur(4px);
+  }
+  
