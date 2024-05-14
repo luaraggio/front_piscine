@@ -99,6 +99,7 @@ body nav a:hover {
 
 .texto-resumo
 {
+    text-align: center;
     padding-top: 50px;
     width: 600px;
     height: 300px;
